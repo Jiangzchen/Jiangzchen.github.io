@@ -1,0 +1,497 @@
+<!DOCTYPE html> 
+<html lang="zh-cn"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><title>First | My New Hugo Site</title>
+  <meta property="og:title" content="First - My New Hugo Site">
+  <meta property="og:type" content="article">
+  
+  <meta property="article:published_time" content="2021-07-01T19:17:21&#43;08:00">
+  
+  
+  <meta property="article:modified_time" content="2021-07-01T19:17:21&#43;08:00">
+  
+  <meta name="keywords" content="HTML, hugo, CSS">
+  <meta name="description" content="First"><meta name="author" content="">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="stylesheet" type="text/css" href="/css/hulga.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/hulga-dark.min.css" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="/manifest.json">
+</head><body>
+  <div id="main"><section class="hero is-primary shadow-hero  is-bold ">
+  <div class="hero-head">
+    <nav class="navbar is-primary">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item " href="https://example.com">
+        My New Hugo Site
+      </a>
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        
+        <a class="navbar-item" href="/" title="index">首页</a>
+        
+        <a class="navbar-item" href="/archives/" title="archives">归档</a>
+        
+        <a class="navbar-item" href="/about/" title="about">关于</a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+  </div>
+  <div class="hero-body">
+    <header class="container has-text-centered">
+      <h1 class="title post-title">
+        First
+      </h1>
+      <h2 class="subtitle"><time class="post-meta">2021/07/01</time> ・
+          
+            <span class="post-tag post-meta">
+              <a href="https://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a>
+            </span>
+          
+        </h2>
+      
+      <div class="tagbox post-meta">
+        
+        <span class="post-tag">
+          <a href="https://example.com/tags/mybatis">#mybatis</a>
+        </span>
+        
+        <span class="post-tag">
+          <a href="https://example.com/tags/spring">#spring</a>
+        </span>
+        
+        <span class="post-tag">
+          <a href="https://example.com/tags/springmvc">#springmvc</a>
+        </span>
+        
+        <span class="post-tag">
+          <a href="https://example.com/tags/springboot">#springboot</a>
+        </span>
+        
+        <span class="post-tag">
+          <a href="https://example.com/tags/%E6%B5%8B%E8%AF%95">#测试</a>
+        </span>
+        
+        <span class="post-tag">
+          <a href="https://example.com/tags/%E9%9A%8F%E7%AC%94">#随笔</a>
+        </span>
+        
+      </div>
+      
+    </header>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      
+      <div class="column is-1 is-hidden-mobile"></div>
+      <div class="column is-8">
+      
+        <article class="content" id="post-content"><h1 id="mybatis-generator-逆向工程">MyBatis-Generator 逆向工程</h1>
+<p>1、<strong>创建普通的 maven 工程,项目名称为<code>MyBatis-Generator</code></strong></p>
+<p>2、<strong>添加依赖 pom.xml</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;com.zichen&lt;/groupId&gt;
+    &lt;artifactId&gt;MyBatis-Generator&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+                &lt;artifactId&gt;mybatis-generator-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;1.4.0&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;!--mybatis的代码生成器的配置文件--&gt;
+                    &lt;configurationFile&gt;src/main/resources/generatorConfig.xml&lt;/configurationFile&gt;
+                    &lt;!--允许覆盖生成的文件--&gt;
+                    &lt;overwrite&gt;true&lt;/overwrite&gt;
+                &lt;/configuration&gt;
+                &lt;dependencies&gt;
+                    &lt;!--mysql的JDBC驱动--&gt;
+                    &lt;dependency&gt;
+                        &lt;groupId&gt;mysql&lt;/groupId&gt;
+                        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+                        &lt;version&gt;5.1.47&lt;/version&gt;
+                    &lt;/dependency&gt;
+                &lt;/dependencies&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre><p>3、<strong>在 resources 下面创建<code>application-dev.properties</code>文件</strong></p>
+<pre><code># mysql数据源
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/jiangzi?characterEncoding=utf-8
+spring.datasource.username=root
+spring.datasource.password=123456
+
+# generator-Config
+# po,entity实体类的包路径和项目路径
+model.po.Package=com.zichen.entity
+model.po.Project=src/main/java
+# mapper和mapping
+map.mapper.Package=com.zichen.mapper
+map.mapper.Project=src/main/java
+
+map.mapperxml.Package=mapping
+map.mapperxml.Project=src/main/resources
+</code></pre><p>4、<strong>在 resources 下面创建<code>generatorConfig.xml</code>文件</strong></p>
+<blockquote>
+<p>配置文件中有详细的参数的说明,&lt;table&quot;/&gt;修改自己需要的表的信息。</p>
+</blockquote>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE generatorConfiguration
+        PUBLIC &quot;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&quot;
+        &quot;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&quot;&gt;
+
+&lt;generatorConfiguration&gt;
+    &lt;!-- 引入配置文件 --&gt;
+    &lt;properties resource=&quot;application-dev.properties&quot;/&gt;
+    &lt;!--
+        id : 随便填，保证多个 context id 不重复就行
+        defaultModelType ： 可以不填，默认值 conditional，flat表示一张表对应一个po
+        targetRuntime ：可以不填，默认值 MyBatis3，常用的还有 MyBatis3Simple（接口会少很多，只包含最最常用的），这个配置会影响生成的 dao 和 mapper.xml的内容
+
+        标签的名称
+        property (0..N)
+        plugin (0..N)
+        commentGenerator (0 or 1)
+        jdbcConnection (需要connectionFactory 或 jdbcConnection)
+        javaTypeResolver (0 or 1)
+        javaModelGenerator (至少1个)
+        sqlMapGenerator (0 or 1)
+        javaClientGenerator (0 or 1)
+        table (1..N)
+    --&gt;
+    &lt;context id=&quot;mybatisTables&quot; targetRuntime=&quot;MyBatis3Simple&quot;&gt;
+
+        &lt;!--
+            自动识别数据库关键字，默认为 false，一般保留默认值，遇到数据库关键字（Java关键字）时，按照 table 元素中 columnOverride 属性的配置进行覆盖；
+            如果设置为 true， 则需按照 SqlReservedWords 中定义的关键字列表，对关键字进行定界（分隔）；
+            定界符（分隔符）参见 beginningDelimiter 和 endingDelimiter 的设置
+            &lt;property name=&quot;autoDelimitKeywords&quot; value=&quot;false&quot;/&gt;
+
+            beginningDelimiter 和 endingDelimiter，定界符（分隔符），指明用于标记数据库关键字的符号，默认为为双引号 (&quot;)；
+            在 oracle 中是双引号 (&quot;)，在 MySQL 中需配置为反引号 (`)
+            &lt;property name=&quot;beginningDelimiter&quot; value=&quot;`&quot;/&gt;
+            &lt;property name=&quot;endingDelimiter&quot; value=&quot;`&quot;/&gt;
+
+            生成的 Java 文件的编码
+            &lt;property name=&quot;JavaFileEncoding&quot; value=&quot;UTF-8&quot;/&gt;
+
+            格式化 Java 代码
+            &lt;property name=&quot;javaFormatter&quot; value=&quot;org.mybatis.generator.api.dom.DefaultJavaFormatter&quot;/&gt;
+            格式化 XML 代码
+            &lt;property name=&quot;xmlFormatter&quot; value=&quot;org.mybatis.generator.api.dom.DefaultXmlFormatter&quot;/&gt;
+			--&gt;
+
+        &lt;!--
+            plugin
+            配置一个插件，例如
+            &lt;plugin type=&quot;org.mybatis.generator.plugins.EqualsHashCodePlugin&quot;/&gt;
+            这个插件给生成的Java模型对象增加了equals和hashCode方法
+            使生成的 Model 实现 Serializable 接口
+            &lt;plugin type=&quot;org.mybatis.generator.plugins.SerializablePlugin&quot;/&gt;
+
+            为生成的 Model 覆写 toString() 方法
+            &lt;plugin type=&quot;org.mybatis.generator.plugins.ToStringPlugin&quot;/&gt;
+        --&gt;
+
+        &lt;!--&lt;plugin type=&quot;org.mybatis.generator.plugins.EqualsHashCodePlugin&quot;/&gt;--&gt;
+
+        &lt;!--
+            commentGenerator标签中 用来配置生成的注释。默认是生成注释的，并且会生成时间戳
+
+            不希望生成的注释中包含时间戳
+            &lt;property name=&quot;suppressDate&quot; value=&quot;true&quot;/&gt;
+
+            添加 db 表中字段的注释
+            默认生成的注释是不会有 db 表中字段的注释，如果你想知道每个字段在数据库中的含义(前提是数据库中对应表的字段你添加了注释)
+            &lt;property name=&quot;addRemarkComments&quot; value=&quot;true&quot;/&gt;
+        --&gt;
+        &lt;commentGenerator&gt;
+            &lt;!--
+                是否去除自动生成的注释 true：是 ： false:否
+                说实话，MyBatis Generator 生成注释无用信息太多了，所以我一般都选择不生成注释
+            --&gt;
+
+            &lt;property name=&quot;suppressAllComments&quot; value=&quot;true&quot; /&gt;
+        &lt;/commentGenerator&gt;
+
+
+
+        &lt;!--数据库连接的信息：驱动类、连接地址、用户名、密码 --&gt;
+        &lt;jdbcConnection driverClass=&quot;${spring.datasource.driverClassName}&quot;
+                        connectionURL=&quot;${spring.datasource.url}&quot;
+                        userId=&quot;${spring.datasource.username}&quot;
+                        password=&quot;${spring.datasource.password}&quot;&gt;
+        &lt;/jdbcConnection&gt;
+
+        &lt;!--
+            &lt;jdbcConnection driverClass=&quot;oracle.jdbc.OracleDriver&quot;
+                connectionURL=&quot;jdbc:oracle:thin:@127.0.0.1:1521:yycg&quot;
+                userId=&quot;yycg&quot;
+                password=&quot;yycg&quot;&gt;
+            &lt;/jdbcConnection&gt;
+        --&gt;
+
+        &lt;!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
+            NUMERIC 类型解析为java.math.BigDecimal --&gt;
+        &lt;javaTypeResolver&gt;
+            &lt;!--
+                是否使用 bigDecimal，默认false。
+                false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer
+                true，把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal
+
+
+                默认false
+                false，将所有 JDBC 的时间类型解析为 java.util.Date
+                true，将 JDBC 的时间类型按如下规则解析
+                    DATE	                -&gt; java.time.LocalDate
+                    TIME	                -&gt; java.time.LocalTime
+                    TIMESTAMP                   -&gt; java.time.LocalDateTime
+                    TIME_WITH_TIMEZONE  	-&gt; java.time.OffsetTime
+                    TIMESTAMP_WITH_TIMEZONE	-&gt; java.time.OffsetDateTime
+            --&gt;
+            &lt;property name=&quot;forceBigDecimals&quot; value=&quot;false&quot; /&gt;
+        &lt;/javaTypeResolver&gt;
+
+        &lt;!-- targetProject:生成PO类的位置和项目路径 --&gt;
+        &lt;javaModelGenerator targetPackage=&quot;${model.po.Package}&quot;
+                            targetProject=&quot;${model.po.Project}&quot;&gt;
+            &lt;!-- enableSubPackages:是否让schema作为包的后缀 --&gt;
+            &lt;property name=&quot;enableSubPackages&quot; value=&quot;false&quot; /&gt;
+            &lt;!-- 从数据库返回的值被清理前后的空格 --&gt;
+            &lt;property name=&quot;trimStrings&quot; value=&quot;true&quot; /&gt;
+        &lt;/javaModelGenerator&gt;
+
+
+        &lt;!-- targetProject:mapper映射文件生成的位置 --&gt;
+        &lt;sqlMapGenerator targetPackage=&quot;${map.mapperxml.Package}&quot;
+                         targetProject=&quot;${map.mapperxml.Project}&quot;&gt;
+            &lt;!-- enableSubPackages:是否让schema作为包的后缀 --&gt;
+            &lt;property name=&quot;enableSubPackages&quot; value=&quot;false&quot; /&gt;
+        &lt;/sqlMapGenerator&gt;
+        &lt;!-- targetPackage：mapper接口生成的位置 --&gt;
+        &lt;javaClientGenerator type=&quot;XMLMAPPER&quot;
+                             targetPackage=&quot;${map.mapper.Package}&quot;
+                             targetProject=&quot;${map.mapper.Project}&quot;&gt;
+            &lt;!-- enableSubPackages:是否让schema作为包的后缀 --&gt;
+            &lt;property name=&quot;enableSubPackages&quot; value=&quot;false&quot; /&gt;
+        &lt;/javaClientGenerator&gt;
+
+
+        &lt;!--
+            指定数据库表
+            schema为数据库名，oracle需要配置，mysql不需要配置。
+            tableName为对应的数据库表名
+            domainObjectName 是要生成的实体类名(可以不指定，默认按帕斯卡命名法将表名转换成类名)
+            enableXXXByExample 默认为 true， 为 true 会生成一个对应Example帮助类，帮助你进行条件查询，不想要可以设为false
+
+            是否使用实际列名,默认为false
+            &lt;property name=&quot;useActualColumnNames&quot; value=&quot;false&quot; /&gt;
+         --&gt;
+
+        &lt;table schema=&quot;&quot; tableName=&quot;sys_user&quot; domainObjectName=&quot;User&quot;
+               enableCountByExample=&quot;false&quot; enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot;
+               enableUpdateByExample=&quot;false&quot; selectByExampleQueryId=&quot;false&quot;&gt;
+        &lt;/table&gt;
+        &lt;table schema=&quot;&quot; tableName=&quot;sys_dept&quot; domainObjectName=&quot;Dept&quot;&gt;&lt;/table&gt;
+
+
+    &lt;/context&gt;
+&lt;/generatorConfiguration&gt;
+</code></pre><p>5、<strong>启动效果</strong></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f9f2de72bb504e8c94269950888522ad~tplv-k3u1fbpfcp-watermark.image" alt="my-logo.png" title="my-logo"></p>
+</article>
+      </div>
+      
+      <div class="column is-hidden-mobile">
+        <div class="sidebar" id="toc">
+          
+          <div class="post post-toc" id="post-toc">
+            
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+<footer class="footer" style="transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s; opacity: 1;">
+  <div class="container">
+		<div class="level">
+			<div class="level-start has-text-centered-mobile">
+				<a class="footer-logo is-block has-mb-6" href="/">i蝸居年華_谢谢谢</a>
+				<p class="is-size-7"> © 2016—2021 i蝸居年華_谢谢谢&nbsp; 由
+					<a href="http://hexo.io/" target="_blank">Hexo</a> 强力驱动<br> 
+						<span id="busuanzi_container_site_uv" style="display: inline;">
+							您是第<span id="busuanzi_value_site_uv">6207</span>个访客</span>
+							</p>
+			</div>
+			<div class="level-end"><div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+						<p class="control"><a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+							<i class="fab fa-creative-commons"></i>
+						</a>
+						</p>
+						
+						<p class="control">
+						<a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/thank037"><i class="fab fa-github"></i></a></p></div></div>
+		</div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script><script>
+addBackToTop({
+  diameter: 42,
+
+  innerHTML: '<svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>',
+  textColor: '#fff'
+});
+</script>
+<script type="text/javascript">
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    if ($navbarBurgers.length > 0) {
+      
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
+  <link id="hlcss" rel="stylesheet" type="text/css">
+
+<script>
+  function addCss(url) {
+    var link = document.getElementById('hlcss');
+    link.href = url;
+  }
+  
+  var darkcss = "https://example.com/css/monokai.css"
+  
+  var lightcss = "https://example.com/css/monokailight.css"
+  
+  if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+    addCss(lightcss);
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    addCss(darkcss);
+  } else {
+    addCss(lightcss);
+  }
+  window.matchMedia("(prefers-color-scheme: dark)").addListener(
+    e => e.matches && addCss(darkcss)
+  );
+  window.matchMedia("(prefers-color-scheme: light)").addListener(
+    e => e.matches && addCss(lightcss)
+  );
+</script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js"></script><script>
+  anchors.options = {
+    placement: 'left',
+    
+    icon: '#'
+  };
+  anchors.add('.content h1, .content h2, .content h3');
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha256-tn6hZ2YGDv0w1/DaFL4MiUoXuAVclrtFZs13ch3TB9M=" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha256-1qhJwAgsSPVSSjlQVTewHS49eaoAbOz651dveUANVBI=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha256-oEuQVLwO5Ii6subChtLbrY5gx7NDRU+UJJ9jvvau+FI=" crossorigin="anonymous"></script><script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      
+      delimiters: [{
+        left: "$$",
+        right: "$$",
+        display: true
+      },
+      {
+        left: "\\[",
+        right: "\\]",
+        display: true
+      },
+      {
+        left: "$",
+        right: "$",
+        display: false
+      },
+      {
+        left: "\\(",
+        right: "\\)",
+        display: false
+      }
+      ]
+
+    });
+  });
+</script>
+
+  
+
+
+<link rel="stylesheet" type="text/css" href="https://example.com/css/toc.min.css"><script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.post-toc',
+        
+        contentSelector: '#post-content',
+        
+        headingSelector: 'h1, h2, h3',
+        collapseDepth:  0 ,
+        scrollSmooth: true,
+        positionFixedSelector: '.post-toc',
+        
+        
+        fixedSidebarOffset: 273,
+    });
+</script>
+
+
+</body>
+
+</html>
