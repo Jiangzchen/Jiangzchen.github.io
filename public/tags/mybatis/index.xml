@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mybatis on My New Hugo Site</title>
+    <link>https://example.com/tags/mybatis/</link>
+    <description>Recent content in mybatis on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 01 Jul 2021 19:17:21 +0800</lastBuildDate><atom:link href="https://example.com/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>https://example.com/post/first/</link>
+      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      
+      <guid>https://example.com/post/first/</guid>
+      <description>MyBatis-Generator 逆向工程 1、创建普通的 maven 工程,项目名称为MyBatis-Generator
+2、添加依赖 pom.xml
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt; &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt; &amp;lt;groupId&amp;gt;com.zichen&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;MyBatis-Generator&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;build&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.mybatis.generator&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mybatis-generator-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.4.0&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;!--mybatis的代码生成器的配置文件--&amp;gt; &amp;lt;configurationFile&amp;gt;src/main/resources/generatorConfig.xml&amp;lt;/configurationFile&amp;gt; &amp;lt;!--允许覆盖生成的文件--&amp;gt; &amp;lt;overwrite&amp;gt;true&amp;lt;/overwrite&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;!--mysql的JDBC驱动--&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;mysql&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mysql-connector-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;5.1.47&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; &amp;lt;/build&amp;gt; &amp;lt;/project&amp;gt; 3、在 resources 下面创建application-dev.properties文件
+# mysql数据源 spring.datasource.driverClassName=com.mysql.jdbc.Driver spring.datasource.url=jdbc:mysql://127.0.0.1:3306/jiangzi?characterEncoding=utf-8 spring.datasource.username=root spring.datasource.password=123456 # generator-Config # po,entity实体类的包路径和项目路径 model.po.Package=com.zichen.entity model.po.Project=src/main/java # mapper和mapping map.mapper.Package=com.zichen.mapper map.mapper.Project=src/main/java map.mapperxml.Package=mapping map.mapperxml.Project=src/main/resources 4、在 resources 下面创建generatorConfig.xml文件
+ 配置文件中有详细的参数的说明,&amp;lt;table&amp;quot;/&amp;gt;修改自己需要的表的信息。
+ &amp;lt;?</description>
+    </item>
+    
+  </channel>
+</rss>
