@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Icarus</title>
     <link>https://jiangzchen.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Icarus</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Jul 2021 19:17:21 +0800</lastBuildDate><atom:link href="https://jiangzchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 May 2017 12:10:51 +0200</lastBuildDate><atom:link href="https://jiangzchen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First</title>
-      <link>https://jiangzchen.github.io/post/first-copy-2/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>Markdown Cheat Sheet</title>
+      <link>https://jiangzchen.github.io/2017/05/20/markdown-cheat-sheet/</link>
+      <pubDate>Sat, 20 May 2017 12:10:51 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/post/first-copy-2/</guid>
-      <description>MyBatis-Generator 逆向工程 1、创建普通的 maven 工程,项目名称为MyBatis-Generator
-2、添加依赖 pom.xml
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt; &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt; &amp;lt;groupId&amp;gt;com.zichen&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;MyBatis-Generator&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;build&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.mybatis.generator&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mybatis-generator-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.4.0&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;!--mybatis的代码生成器的配置文件--&amp;gt; &amp;lt;configurationFile&amp;gt;src/main/resources/generatorConfig.xml&amp;lt;/configurationFile&amp;gt; &amp;lt;!--允许覆盖生成的文件--&amp;gt; &amp;lt;overwrite&amp;gt;true&amp;lt;/overwrite&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;!--mysql的JDBC驱动--&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;mysql&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mysql-connector-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;5.1.47&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; &amp;lt;/build&amp;gt; &amp;lt;/project&amp;gt; 3、在 resources 下面创建application-dev.properties文件
-# mysql数据源 spring.datasource.driverClassName=com.mysql.jdbc.Driver spring.datasource.url=jdbc:mysql://127.0.0.1:3306/jiangzi?characterEncoding=utf-8 spring.datasource.username=root spring.datasource.password=123456 # generator-Config # po,entity实体类的包路径和项目路径 model.po.Package=com.zichen.entity model.po.Project=src/main/java # mapper和mapping map.mapper.Package=com.zichen.mapper map.mapper.Project=src/main/java map.mapperxml.Package=mapping map.mapperxml.Project=src/main/resources 4、在 resources 下面创建generatorConfig.xml文件
- 配置文件中有详细的参数的说明,&amp;lt;table&amp;quot;/&amp;gt;修改自己需要的表的信息。
- &amp;lt;?</description>
+      <guid>https://jiangzchen.github.io/2017/05/20/markdown-cheat-sheet/</guid>
+      <description>&lt;p&gt;This note demonstrates some of what &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; is capable of doing.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Feel free to play with this page. Unlike regular notes, this doesn&amp;rsquo;t automatically save itself.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>First</title>
-      <link>https://jiangzchen.github.io/post/first-copy/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>Using the gallery shortcode</title>
+      <link>https://jiangzchen.github.io/2017/05/20/using-the-gallery-shortcode/</link>
+      <pubDate>Sat, 20 May 2017 12:00:23 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/post/first-copy/</guid>
-      <description>MyBatis-Generator 逆向工程 1、创建普通的 maven 工程,项目名称为MyBatis-Generator
-2、添加依赖 pom.xml
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt; &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt; &amp;lt;groupId&amp;gt;com.zichen&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;MyBatis-Generator&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;build&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.mybatis.generator&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mybatis-generator-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.4.0&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;!--mybatis的代码生成器的配置文件--&amp;gt; &amp;lt;configurationFile&amp;gt;src/main/resources/generatorConfig.xml&amp;lt;/configurationFile&amp;gt; &amp;lt;!--允许覆盖生成的文件--&amp;gt; &amp;lt;overwrite&amp;gt;true&amp;lt;/overwrite&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;!--mysql的JDBC驱动--&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;mysql&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mysql-connector-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;5.1.47&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; &amp;lt;/build&amp;gt; &amp;lt;/project&amp;gt; 3、在 resources 下面创建application-dev.properties文件
-# mysql数据源 spring.datasource.driverClassName=com.mysql.jdbc.Driver spring.datasource.url=jdbc:mysql://127.0.0.1:3306/jiangzi?characterEncoding=utf-8 spring.datasource.username=root spring.datasource.password=123456 # generator-Config # po,entity实体类的包路径和项目路径 model.po.Package=com.zichen.entity model.po.Project=src/main/java # mapper和mapping map.mapper.Package=com.zichen.mapper map.mapper.Project=src/main/java map.mapperxml.Package=mapping map.mapperxml.Project=src/main/resources 4、在 resources 下面创建generatorConfig.xml文件
- 配置文件中有详细的参数的说明,&amp;lt;table&amp;quot;/&amp;gt;修改自己需要的表的信息。
- &amp;lt;?</description>
+      <guid>https://jiangzchen.github.io/2017/05/20/using-the-gallery-shortcode/</guid>
+      <description>&lt;p&gt;This way you can easily include a gallery into your page. Copy the code below into your content file and enter the relative paths to your images.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>First</title>
-      <link>https://jiangzchen.github.io/post/first/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>Formulas with MathJax</title>
+      <link>https://jiangzchen.github.io/2017/05/20/formulas-with-mathjax/</link>
+      <pubDate>Sat, 20 May 2017 11:58:06 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/post/first/</guid>
-      <description>MyBatis-Generator 逆向工程 1、创建普通的 maven 工程,项目名称为MyBatis-Generator
-2、添加依赖 pom.xml
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt; &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt; &amp;lt;groupId&amp;gt;com.zichen&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;MyBatis-Generator&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.0.0-SNAPSHOT&amp;lt;/version&amp;gt; &amp;lt;build&amp;gt; &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.mybatis.generator&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mybatis-generator-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.4.0&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;!--mybatis的代码生成器的配置文件--&amp;gt; &amp;lt;configurationFile&amp;gt;src/main/resources/generatorConfig.xml&amp;lt;/configurationFile&amp;gt; &amp;lt;!--允许覆盖生成的文件--&amp;gt; &amp;lt;overwrite&amp;gt;true&amp;lt;/overwrite&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;!--mysql的JDBC驱动--&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;mysql&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;mysql-connector-java&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;5.1.47&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; &amp;lt;/build&amp;gt; &amp;lt;/project&amp;gt; 3、在 resources 下面创建application-dev.properties文件
-# mysql数据源 spring.datasource.driverClassName=com.mysql.jdbc.Driver spring.datasource.url=jdbc:mysql://127.0.0.1:3306/jiangzi?characterEncoding=utf-8 spring.datasource.username=root spring.datasource.password=123456 # generator-Config # po,entity实体类的包路径和项目路径 model.po.Package=com.zichen.entity model.po.Project=src/main/java # mapper和mapping map.mapper.Package=com.zichen.mapper map.mapper.Project=src/main/java map.mapperxml.Package=mapping map.mapperxml.Project=src/main/resources 4、在 resources 下面创建generatorConfig.xml文件
- 配置文件中有详细的参数的说明,&amp;lt;table&amp;quot;/&amp;gt;修改自己需要的表的信息。
- &amp;lt;?</description>
+      <guid>https://jiangzchen.github.io/2017/05/20/formulas-with-mathjax/</guid>
+      <description>&lt;p&gt;Mathematical equations in form of LaTeX or MathML code can be rendered with the support of &lt;a href=&#34;https://www.mathjax.org&#34;&gt;MathJax&lt;/a&gt;. MathML works out of the box. If you&amp;rsquo;re using LaTeX you need to wrap your equation with &lt;code&gt;$$&lt;/code&gt; as shown in the following example:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to add pages to the menu</title>
+      <link>https://jiangzchen.github.io/2015/10/02/how-to-add-pages-to-the-menu/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      
+      <guid>https://jiangzchen.github.io/2015/10/02/how-to-add-pages-to-the-menu/</guid>
+      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
+menu = &amp;quot;main&amp;quot; </description>
     </item>
     
   </channel>

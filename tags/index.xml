@@ -1,63 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on Icarus</title>
     <link>https://jiangzchen.github.io/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on Icarus</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Jul 2021 19:17:21 +0800</lastBuildDate><atom:link href="https://jiangzchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 May 2017 12:10:51 +0200</lastBuildDate><atom:link href="https://jiangzchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>mybatis</title>
-      <link>https://jiangzchen.github.io/tags/mybatis/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>markdown</title>
+      <link>https://jiangzchen.github.io/tags/markdown/</link>
+      <pubDate>Sat, 20 May 2017 12:10:51 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/tags/mybatis/</guid>
+      <guid>https://jiangzchen.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>spring</title>
-      <link>https://jiangzchen.github.io/tags/spring/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>golang</title>
+      <link>https://jiangzchen.github.io/tags/golang/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/tags/spring/</guid>
+      <guid>https://jiangzchen.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>springboot</title>
-      <link>https://jiangzchen.github.io/tags/springboot/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>hugo</title>
+      <link>https://jiangzchen.github.io/tags/hugo/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/tags/springboot/</guid>
+      <guid>https://jiangzchen.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>springmvc</title>
-      <link>https://jiangzchen.github.io/tags/springmvc/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>programming</title>
+      <link>https://jiangzchen.github.io/tags/programming/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/tags/springmvc/</guid>
+      <guid>https://jiangzchen.github.io/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>测试</title>
-      <link>https://jiangzchen.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
+      <title>theme</title>
+      <link>https://jiangzchen.github.io/tags/theme/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://jiangzchen.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>随笔</title>
-      <link>https://jiangzchen.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Thu, 01 Jul 2021 19:17:21 +0800</pubDate>
-      
-      <guid>https://jiangzchen.github.io/tags/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>https://jiangzchen.github.io/tags/theme/</guid>
       <description></description>
     </item>
     
